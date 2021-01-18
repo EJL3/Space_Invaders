@@ -12,7 +12,7 @@ background = pygame.image.load('background.png')
 mixer.music.load("background.wav")
 mixer.music.play(-1)
 
-pygame.display.set_caption("Space Invader")
+pygame.display.set_caption("Game Animation")
 icon = pygame.image.load('ufo.png')
 pygame.display.set_icon(icon)
 
@@ -85,7 +85,6 @@ def isCollision(enemyX, enemyY, bulletX, bulletY):
 running = True
 while running:
 
-    # RGB = Red, Green, Blue
     screen.fill((0, 0, 0))
     screen.blit(background, (0, 0))
     for event in pygame.event.get():
@@ -108,9 +107,6 @@ while running:
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 playerX_change = 0
-
-    # 5 = 5 + -0.1 -> 5 = 5 - 0.1
-    # 5 = 5 + 0.1
 
     playerX += playerX_change
     if playerX <= 0:
