@@ -12,7 +12,7 @@ background = pygame.image.load('background.png')
 mixer.music.load("background.wav")
 mixer.music.play(-1)
 
-pygame.display.set_caption("Game Animation")
+pygame.display.set_caption("By Rizwan.AR")
 icon = pygame.image.load('ufo.png')
 pygame.display.set_icon(icon)
 
